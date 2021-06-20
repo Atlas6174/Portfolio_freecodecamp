@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Freecodecamp</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;600&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+	<header class="header">
+		<nav id="navbar">
+			<p class="nav-title">
+				<a href="#welcome-section" class="rose">AtlasDev</a>
+			</p>
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="#projects" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about" class="nav-link">About me</a>
+				</li>
+				<li class="nav-item">
+					<a href="#contact" class="nav-link">Contact me</a>
+				</li>
+			</ul>
+		  <div class="menu-btn">
+			<span class="menu-btn_brg"></span>
+		  </div>
+		</nav>
+	</header>
+
+	<main>
+		<section id="welcome-section">
+			<div id="welcome-container" class="container">
+				<h1 id="welcome-title" class="mobile-pad">
+					Welcome to <span class="rose">AtlasDev</span><br>
+					Developing <span class="rose">High Performance</span> Code!!
+				</h1>
+			</div>
+		</section>
+
+		<section id="projects" class="cr-container">
+			<h2 class="section-title rose">Projects</h2>
+			<div class="projects-container">
+				<div class="project-tile">
+					<h2 class="project-title">
+						<a class="project-link"
+							href="https://codepen.io/atlas6174/pen/oNBJWwo"
+							>Javascript Clock
+						</a>
+					</h2>
+					<img class="project-image"
+						src="images/JavascriptClock.png"
+						alt="project screenshot">
+				</div>
+				<div class="project-tile">
+					<h2 class="project-tile">
+						<a class="project-link"
+							href="https://atlas6174.github.io/DocPage_freecodecamp"
+							>Documentation Page
+						</a>
+					</h2>
+					<img class="project-image"
+						 src="images/DocumentationPage.png"
+						alt="project screenshot">
+				</div>
+				<div class="project-tile">
+					<h2 class="project-tile">
+						<a class="project-link"
+							href="https://atlas6174.github.io/Form_freecodecamp/"
+							>Form Page
+						</a>
+					</h2>
+					<img class="project-image"
+						 src="images/SurveyFormPage.png"
+						 alt="project screenshot">
+				</div>
+				<div class="project-tile">
+					<h2 class="project-tile">
+						<a class="project-link"
+							href="https://atlas6174.github.io/blogr-landing-page-main"
+							>Blogr
+						</a>
+					</h2>
+					<img class="project-image"
+						 src="images/BlogrLandingPage.png"
+						 alt="project screenshot">
+				</div>
+				<div class="project-tile">
+					<h2 class="project-tile">
+						<a class="project-link"
+							href="https://atlas6174.github.io/loopstudios-landing-page-main"
+							>Loop Studios
+						</a>
+					</h2>
+					<img class="project-image"
+						 src="images/LoopStudiosLandingPage.png"
+						alt="project screenshot">
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="cr-container  mobile-pad">
+			<h2 class="about-tile section-title rose">About me</h2>
+			<p>I'm a developer, who aim to become a software architect, and work
+			at the machine learning field. I will develop great things. I love
+			the mathematics, the statistics and the science in general. I'll put
+			my effort to develop high quality code.So, let's develop something
+			great!!</p>
+			<p>I have good HTML, CSS and SASS skills. I'm comfortable with
+			javascript and know some things about React. My speciality is to
+			develop data visualization, in order to show the data managed at the
+			backend.</p>
+			<p>I develop the backend with django, and of course, I have a good
+			python knowledge. Write high quality code is my priority, fulfiling
+			that it is readable, reusable and scalable.</p>
+		</section>
+	</main>
+	
+	<footer id="contact" class="cr-container">
+		<h2 class="foot-title rose section-title">Contact me</h2>
+		<p id="github" class="profile">
+			<a href="https://github.com/Atlas6174"
+			   target="_blank"
+				class="profile-link"
+				id="profile-link"
+				>Github
+			</a>
+		</p>
+		<p id="freecodecamp" class="profile">
+			<a href="https://www.freecodecamp.org/atlasdev"
+			   target="_blank"
+				class="profile-link"
+				>FreeCodeCamp
+			</a>
+		</p>
+	</footer>
+
+	<!-- User stories
+
+	(Done) User Story #1: My portfolio should have a welcome section with an id of
+	welcome-section.
+
+	(Done) User Story #2: The welcome section should have an h1 element that contains
+	text.
+
+	(Done) User Story #3: My portfolio should have a projects section with an id of
+	projects.
+
+	(Done) User Story #4: The projects section should contain at least one element
+	with a class of project-tile to hold a project.
+
+	(Done) User Story #5: The projects section should contain at least one link to a
+	project.
+
+	(Done) User Story #6: My portfolio should have a navbar with an id of navbar.
+
+	(Done) User Story #7: The navbar should contain at least one link that I can click
+	on to navigate to different sections of the page.
+
+	(Done) User Story #8: My portfolio should have a link with an id of profile-link,
+	which opens my GitHub or FCC profile in a new tab.
+
+	(Done) User Story #9: My portfolio should have at least one media query.
+
+	(Done) User Story #10: The height of the welcome section should be equal to the
+	height of the viewport.
+
+	(Done) User Story #11: The navbar should always be at the top of the viewport.
+
+	-->
+
+	<script src="main.js"></script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>

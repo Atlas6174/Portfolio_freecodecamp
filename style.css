@@ -1,0 +1,238 @@
+/* Fonts:
+ * font-family: 'Overpass Mono', monospace;
+ * 300 and 600
+ *
+ * Colors:
+ * Platinum: #EAEAEA;
+ * Rich Black: #131B23;
+ * Rose Madder: #E71D36;
+ * */
+
+/********************
+ ***** Generals *****
+ ********************/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, li, a {
+  text-decoration: none;
+  list-style: none;
+  color: none;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+* {
+  font-family: 'Overpass Mono', monospace;
+}
+
+body {
+  background: #EAEAEA;
+}
+
+.rose {
+  color: #E71D36;
+}
+
+.section-title {
+  margin: 1rem auto;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.cr-container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 70rem;
+  margin: 4rem auto 0;
+
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+/***************************
+ ****** Navigation Bar *****
+ ***************************/
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #131B23;
+
+  justify-content: center;
+}
+
+#navbar {
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 1rem;
+
+  align-items: center;
+}
+
+#navbar p {
+  flex: 5;
+  font-size: 1.25rem;
+}
+
+.nav-menu {
+  display: inline-flex;
+  justify-content: space-between;
+
+  flex: 6;
+}
+
+.nav-link {
+  color: #EAEAEA;
+  border-bottom: 1px solid #E71D36;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/***************************
+ ***** Welcome Section *****
+ ***************************/
+#welcome-section {
+  height: 100vh;
+  background: #131B23;
+}
+
+#welcome-container {
+  display: flex;
+  height: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-title {
+  font-size: 2rem;
+  color: #EAEAEA;
+}
+
+/********************
+ ***** Projects *****
+ ********************/
+.projects-container {
+  display: flex;
+  border-radius: .25rem;
+  padding: 1rem;
+  background: #131B23;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.project-tile {
+  min-width: 16rem;
+  padding: .5rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin: .5rem auto;
+}
+
+.project-image {
+  max-width: 21rem;
+  min-width: 10rem;
+}
+
+.projects-title, .project-link {
+  color: #EAEAEA;
+}
+
+/*****************
+ ***** About *****
+ *****************/
+
+/*******************
+ ***** Footer ******
+ *******************/
+#contact .profile {
+  margin: 2rem auto;
+
+  text-align: center;
+}
+
+.profile-link {
+  border-bottom: 1px solid #E71D36;
+
+  font-size: 1.25rem;
+  color: #131B23;
+}
+
+@media (max-width: 800px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #131B23;
+    transform: translateX(-100%);
+
+    font-size: 1.5rem;
+
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-menu.open {
+    transform: none;
+  }
+
+  .menu-btn {
+    display: flex;
+    height: 100%;
+
+    align-items: center;
+  }
+
+  .menu-btn_brg {
+    position: relative;
+    height: 2px;
+    width: 2rem;
+    background: #E71D36;
+  }
+
+  .menu-btn_brg::before {
+    position: absolute;
+    top: -5px;
+    content:" ";
+    height: 2px;
+    width: 2rem;
+    background: #E71D36;
+  }
+
+  .menu-btn_brg::after {
+    position: absolute;
+    top: 5px;
+    content:" ";
+    height: 2px;
+    width: 2rem;
+    background: #E71D36;
+  }
+
+  .mobile-pad {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .projects-container {
+    padding: .25rem;
+  }
+}
